@@ -35,7 +35,7 @@ body {
     #2dc3ff 100%
   );
   background-size: 40px 40px;
-  /* filter: grayscale(1); */
+  filter: grayscale(1);
   animation: animateBg 0.5s linear infinite;
   animation-play-state: paused;
   transition: filter 1s;
