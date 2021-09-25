@@ -13,6 +13,8 @@ body {
 .container {
   position: relative;
   display: flex;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, transparent, #0004);
 }
 .container .box {
   position: relative;
@@ -35,7 +37,28 @@ body {
   background-size: 40px 40px;
   filter: grayscale(1);
   animation: animateBg 0.5s linear infinite;
+  animation-play-state: paused;
+  transition: filter 1s;
 }
+.container .box:nth-child(2) {
+  background: linear-gradient(
+    135deg,
+    #ff61ae 25%,
+    #444 25%,
+    #444 50%,
+    #ff61ae 50%,
+    #ff61ae 75%,
+    #444 75%,
+    #444 100%,
+    #ff61ae 100%
+  );
+  background-size: 40px 40px;
+}
+.container .box:hover {
+  animation-play-state: running;
+  filter: grayscale(0);
+}
+
 @keyframes animateBg {
   0% {
     background-position: 0;
