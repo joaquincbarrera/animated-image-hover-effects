@@ -25,14 +25,14 @@ body {
   border-radius: 20px;
   background: linear-gradient(
     45deg,
-    #5ccbf7 25%,
+    #1cbbfa 25%,
     #444 25%,
     #444 50%,
-    #2dc3ff 50%,
-    #2dc3ff 75%,
+    #1cbbfa 50%,
+    #1cbbfa 75%,
     #444 75%,
     #444 100%,
-    #2dc3ff 100%
+    #1cbbfa 100%
   );
   background-size: 40px 40px;
   filter: grayscale(1);
